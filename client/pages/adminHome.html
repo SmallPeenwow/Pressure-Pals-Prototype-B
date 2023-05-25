@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../src/styles/snackbarStyle.css">
+    <link rel="stylesheet" href="../src/styles/menuItemsStyle.css">
+    <link rel="stylesheet" href="../src/styles/AdminHome/adminStyle.css">
+    <link rel="stylesheet" href="../src/styles/AdminHome/userRequestCardStyle.css">
+    <link rel="stylesheet" href="../src/styles/AdminHome/userRequestCardTable.css">
+    <script type="module" defer src="../src/components/Menu/menuIconToggle.js"></script>
+    <script type="module" defer src="../src/components/Menu/logOut.js"></script>
+    <script type="module" defer src="../src/components/AdminHome/goToDatesBooked.js"></script>
+    <script type="module" defer src="../src/components/AdminHome/onloadFetchPendingRequest.js"></script>
+    <script type="module" defer src="../src/components/AdminHome/refreshButtonAction.js"></script>
+    <script type="module" defer src="../src/components/AdminHome/sendResponseTypeBookingAction.js"></script>
+    <title>Pressure Pals</title>
+</head>
+<body>
+
+    <div id="snack-bar"></div>
+
+    <div id="menu-items" class="hidden">            
+        <button id="log-out">
+            <span class="material-symbols-outlined">
+                logout
+            </span>
+            Log Out
+        </button>
+    </div>
+
+    <header>
+        <span id="menu" class="material-symbols-outlined">
+            menu
+        </span>
+        <h1>Pressure Pals</h1>
+    </header>
+
+    <main>
+        <div class="button-container">
+            <button id="refresh-action" class="refresh">Refresh</button>
+            <button id="check-bookings-button" type="button">Check Bookings</button>
+        </div>
+        <div class="container">
+            <div class="table-container">
+                <div class="inner-table-container-request-cards">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

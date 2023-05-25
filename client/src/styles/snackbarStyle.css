@@ -1,0 +1,46 @@
+@import '../constants/constants.css';
+
+#snack-bar {
+	visibility: hidden;
+	min-width: 25rem;
+	left: 50%;
+	top: 13%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	display: flex;
+	max-height: 5rem;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-color);
+	color: white;
+	border-radius: var(--border-radius-5);
+	padding: 1em;
+	position: fixed;
+}
+
+#snack-bar.show {
+	visibility: visible;
+	animation: fadeIn 1s, fadeOut 1s 7s;
+}
+
+@keyframes fadeIn {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: 13%;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		top: 13%;
+		opacity: 1;
+	}
+	to {
+		top: 0;
+		opacity: 0;
+	}
+}

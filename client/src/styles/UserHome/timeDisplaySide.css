@@ -1,0 +1,16 @@
+@import '../../constants/constants.css';
+
+.time-display-side-container div {
+	color: var(--secondary-color);
+	background-color: var(--table-time-display-color);
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	border: 1px solid black;
+	border-top: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+}

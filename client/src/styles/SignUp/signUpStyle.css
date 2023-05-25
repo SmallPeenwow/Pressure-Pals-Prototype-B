@@ -1,0 +1,402 @@
+@import '../../constants/constants.css';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	font-family: 'Inter';
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+header {
+	background-color: var(--main-color);
+	color: var(--secondary-color);
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+header h1 {
+	font-size: 42px;
+	text-shadow: var(--default-text-shadow);
+	cursor: default;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	height: 650px;
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	background-color: var(--secondary-color);
+}
+
+section h2 {
+	background-color: var(--main-color);
+	font-size: 30px;
+	border-radius: var(--border-radius-5) var(--border-radius-5) 0px 0px;
+	padding: 10px 0px 10px 15px;
+	color: var(--secondary-color);
+	text-shadow: var(--default-text-shadow);
+	cursor: default;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex: 1;
+	padding-left: 40px;
+}
+
+.section-div-one,
+.section-div-two,
+.section-div-three {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 20px;
+	column-gap: 60px;
+}
+
+.section-div-one div,
+.section-div-two div,
+.section-div-three div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.note-container {
+	margin-top: 10px;
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: flex-start !important;
+	gap: 3px !important;
+	width: 300px;
+}
+
+.note-container p {
+	padding: 0px 10px 20px 0px;
+	word-break: break-all;
+	font-size: 12px;
+}
+
+.div-three-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px !important;
+	position: relative;
+}
+
+/* Inputs Sections */
+
+input {
+	height: 50px;
+	width: 300px;
+	background-color: var(--input-background-color);
+	border: none;
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	padding: 5px 10px;
+	font-size: 18px;
+}
+
+input:focus {
+	border: 2px solid var(--input-focus-border-color);
+	outline: none;
+}
+
+.submit-input {
+	background-color: var(--main-color);
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	height: 45px;
+	width: 250px;
+	font-size: 24px;
+	color: var(--secondary-color);
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 50px;
+}
+
+.submit-input:hover {
+	background-color: var(--secondary-color);
+	color: var(--main-color);
+}
+
+.input-required {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	gap: 20px !important;
+}
+
+.star {
+	color: var(--booking-decline-button-color);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+input::placeholder {
+	color: #d5d5d5;
+}
+
+/* Label Sections */
+
+label {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+/* circle background  */
+
+.circle-group-one-left,
+.circle-group-two-right,
+.circle-group-three-right {
+	position: absolute;
+	z-index: -1;
+}
+
+.circle-group-one-left {
+	bottom: 180px;
+	left: -235px;
+}
+
+.circle-group-one-left .circle-inner {
+	bottom: 20px;
+}
+
+.circle-group-one-left .circle-middle {
+	bottom: 15px;
+}
+
+.circle-group-one-left .circle-outer {
+	bottom: 0px;
+}
+
+.circle-group-two-right {
+	right: -130px;
+}
+
+.circle-group-two-right .circle-inner,
+.circle-group-two-right .circle-middle,
+.circle-group-two-right .circle-outer {
+	right: 0;
+}
+
+.circle-group-two-right .circle-inner {
+	height: 180px;
+	width: 180px;
+}
+
+.circle-group-two-right .circle-middle {
+	height: 230px;
+	width: 230px;
+}
+
+.circle-group-two-right .circle-outer {
+	height: 290px;
+	width: 290px;
+}
+
+.circle-group-three-right {
+	right: -100px;
+	bottom: -250px;
+}
+
+.circle-group-three-right .circle-inner {
+	height: 250px;
+	width: 250px;
+	bottom: 50px;
+	right: 60px;
+}
+
+.circle-group-three-right .circle-middle {
+	height: 325px;
+	width: 325px;
+	bottom: 30px;
+	right: 50px;
+}
+
+.circle-group-three-right .circle-outer {
+	height: 415px;
+	width: 415px;
+	right: 30px;
+	bottom: 0px;
+}
+
+.circle-inner {
+	background-color: var(--circle-inner-color);
+	height: 320px;
+	width: 320px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.circle-middle {
+	background-color: var(--circle-middle-color);
+	height: 420px;
+	width: 420px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -2;
+}
+
+.circle-outer {
+	background-color: var(--circle-outer-color);
+	height: 540px;
+	width: 540px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -3;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1200px) {
+	body {
+		overflow: auto;
+	}
+
+	.circle-group-one-left,
+	.circle-group-two-right,
+	.circle-group-three-right {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	header h1 {
+		font-size: 36px;
+	}
+
+	section {
+		width: 670px;
+	}
+
+	.section-div-one,
+	.section-div-two,
+	.section-div-three {
+		column-gap: 40px;
+	}
+
+	input {
+		width: 230px;
+	}
+
+	label {
+		font-size: 18px;
+	}
+
+	.submit-input {
+		font-size: 20px;
+		right: 45px;
+	}
+
+	.note-container {
+		margin-top: 0px;
+		width: 250px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.section-div-one,
+	.section-div-two,
+	.section-div-three {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	input {
+		width: 350px;
+	}
+
+	section {
+		height: auto;
+		margin-bottom: 50px;
+		width: 500px;
+	}
+
+	.container {
+		padding: 10px 40px 15px 40px;
+		gap: 20px;
+	}
+
+	.note-container {
+		margin-top: 0px;
+		width: 350px;
+	}
+
+	.submit-input {
+		position: initial;
+	}
+
+	body {
+		gap: 50px;
+	}
+
+	input {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	section {
+		width: 350px;
+	}
+
+	.container {
+		padding: 10px 20px 15px 20px;
+		gap: 20px;
+	}
+
+	input {
+		width: 250px;
+	}
+
+	header h1 {
+		font-size: 30px;
+	}
+
+	section h2 {
+		font-size: 24px;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	.star {
+		font-size: 20px;
+	}
+
+	.note-container {
+		width: 250px;
+		overflow-wrap: break-word;
+	}
+
+	input {
+		font-size: 14px;
+	}
+
+	.submit-input {
+		width: 310px;
+	}
+}

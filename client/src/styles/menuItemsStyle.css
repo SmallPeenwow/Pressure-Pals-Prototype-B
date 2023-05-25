@@ -1,0 +1,33 @@
+@import '../constants/constants.css';
+
+#menu-items {
+	background-color: var(--main-color);
+	position: absolute;
+	top: 79px;
+	z-index: 5;
+	height: auto;
+	width: 200px;
+	display: none;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1px;
+}
+
+#menu-items button {
+	background-color: var(--main-color);
+	border: none;
+	padding: 15px 10px;
+	width: 200px;
+	display: flex;
+	gap: 5px;
+	color: var(--secondary-color);
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
+#menu-items button:hover {
+	background-color: var(--hover-default-color-no-shadow);
+	color: var(--main-color);
+}

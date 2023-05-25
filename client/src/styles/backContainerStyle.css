@@ -1,0 +1,31 @@
+@import '../constants/constants.css';
+
+.back-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 60px 40px 45px;
+	gap: 20px;
+	position: relative;
+}
+
+.back-container button {
+	background-color: var(--main-color);
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-15);
+	height: 50px;
+	width: 230px;
+	border: none;
+	font-size: 24px;
+	color: var(--secondary-color);
+	text-shadow: var(--default-text-shadow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.back-container button:hover {
+	background-color: var(--secondary-color);
+	color: var(--main-color);
+}

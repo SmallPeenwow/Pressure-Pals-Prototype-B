@@ -1,0 +1,34 @@
+@import '../../constants/constants.css';
+
+.booking-slots-container div {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-transform: capitalize;
+	border: 1px solid black;
+	border-left: none;
+	border-top: none;
+}
+
+.booking-slots-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: inherit;
+}
+
+.booking-slots-container div:hover {
+	background-color: #e0e0e0;
+}
+
+.closed {
+	background-color: var(--table-slot-closed-color);
+}
+
+.available {
+	background-color: var(--table-slot-available-color);
+}

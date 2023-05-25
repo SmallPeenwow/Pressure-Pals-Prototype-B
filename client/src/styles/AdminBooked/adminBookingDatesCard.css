@@ -1,0 +1,89 @@
+@import '../../constants/constants.css';
+
+.not-completed {
+	background-color: var(--admin-booking-not-complete-background-color);
+}
+
+.in-progress {
+	background-color: var(--admin-booking-in-progress-background-color);
+}
+
+.completed {
+	background-color: var(--admin-booking-completed-background-color);
+}
+
+#booked-dates-card {
+	width: 490px;
+	height: 200px;
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	border: none;
+	display: flex;
+	align-items: center;
+	padding: 10px 12px 5px 15px;
+}
+
+.left-side-booked-dates-card,
+.right-side-booked-dates-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: inherit;
+	font-size: 16px;
+}
+
+.left-side-booked-dates-card {
+	flex-basis: 45%;
+}
+.right-side-booked-dates-card {
+	flex-basis: 55%;
+}
+
+.date-display-side,
+.address-display-side {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.address-display-side h4 {
+	font-size: 18px;
+}
+
+.address-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.user-details-display-side {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 20px;
+	flex-basis: 50%;
+}
+
+.user-details-tab {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.tab-one {
+	align-items: flex-end;
+}
+
+.progress-container {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+	#booked-dates-card {
+		width: 600px;
+		height: 200px;
+	}
+}

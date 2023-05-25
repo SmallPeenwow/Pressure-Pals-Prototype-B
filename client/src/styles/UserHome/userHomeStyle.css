@@ -1,0 +1,144 @@
+@import '../../constants/constants.css';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	font-family: 'Inter';
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+header {
+	background-color: var(--main-color);
+	color: var(--secondary-color);
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+header h1 {
+	font-size: 48px;
+	text-shadow: var(--default-text-shadow);
+	cursor: default;
+}
+
+#menu {
+	position: absolute;
+	left: 0;
+	font-size: 48px;
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.container {
+	padding-bottom: 20px;
+	height: 83%;
+}
+
+.table-container {
+	width: 95%;
+	height: 100%;
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	background-color: var(--secondary-color);
+	padding: 10px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 40px 50px;
+	gap: 20px;
+	position: relative;
+}
+
+.button-container button,
+.button-date {
+	background-color: var(--main-color);
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-15);
+	height: 50px;
+	width: 280px;
+	border: none;
+	font-size: 24px;
+	color: var(--secondary-color);
+	text-shadow: var(--default-text-shadow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.button-container button:hover,
+.button-date:hover {
+	background-color: var(--secondary-color);
+	color: var(--main-color);
+}
+
+.button-date:focus-visible {
+	outline: none;
+}
+
+.button-date {
+	display: flex;
+	padding: 0px 20px;
+	justify-content: space-between !important;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.refresh {
+	position: absolute;
+	width: 170px !important;
+	left: 30px;
+}
+
+#back-button {
+	position: absolute;
+	left: 2%;
+	width: 230px;
+}
+
+.table-dates-weekend-container {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	height: 100%;
+}
+
+.booking-container {
+	display: flex;
+	height: 550px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.table-container {
+		overflow-y: auto;
+	}
+
+	main {
+		height: 93%;
+	}
+}

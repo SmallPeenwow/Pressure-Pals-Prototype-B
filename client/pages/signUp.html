@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/SignUp/signUpStyle.css">
+    <link rel="stylesheet" href="../src/styles/snackbarStyle.css">
+    <script type="module" defer src="../src/components/SignUpPage/index.js"></script>
+    <script type="module" defer src="../src/components/SignUpPage/changeTextInputs.js"></script>
+    <title>Pressure Pals</title>
+</head>
+<body>
+    <div id="snack-bar"></div>
+
+    <div class="circle-group-one-left">
+        <div class="circle-inner one-left"></div>
+        <div class="circle-middle one-left"></div>
+        <div class="circle-outer one-left"></div>
+    </div>
+
+    <div class="circle-group-two-right">
+        <div class="circle-inner two-right"></div>
+        <div class="circle-middle two-right"></div>
+        <div class="circle-outer two-right"></div>
+    </div>
+   
+    <div class="circle-group-three-right">
+        <div class="circle-inner three-right"></div>
+        <div class="circle-middle three-right"></div>
+        <div class="circle-outer three-right"></div>
+    </div>
+
+    <header>
+        <h1>
+            Create Account
+        </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter Details</h2>
+            <form class="container" id="sign-up" method="post">
+                <div class="section-div-one">
+                    <div>
+                        <label for="name">Name</label>
+                        <div class="input-required">
+                            <input id="name" type="text" placeholder="Enter Name">
+                            <div class="star">*</div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="surname">Surname</label>
+                        <input id="surname" type="text" placeholder="Enter Surname">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <div class="input-required">
+                            <input id="email" type="text" placeholder="Example@gmail.com">
+                            <div class="star">*</div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="cell-number">Cell Number</label>
+                        <div class="input-required">
+                            <input id="cell-number" type="text" placeholder="Enter Cell Number">
+                            <div class="star">*</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section-div-two">
+                    <div>
+                        <label for="password">Password</label>
+                        <div class="input-required">
+                            <input id="password" type="password" placeholder="Enter Password">
+                            <div class="star">*</div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" type="password" placeholder="Confirm Password">
+                    </div>
+                </div>
+    
+                <div class="section-div-three">
+                    <div class="div-three-container">
+                        <div>
+                            <label for="address">Address</label>
+                            <input id="address" type="text" placeholder="Enter Address">
+                        </div>
+                        <div>
+                            <label for="suburb">Suburb</label>
+                            <input id="suburb" type="text" placeholder="Enter Suburb">
+                        </div>
+                    </div>
+    
+                    <div class="div-three-container">
+                        <div class="note-container">
+                            <h3>Note:</h3>
+                            <p>
+                                Address and suburb is used to get to your location to do the job. If not entered here you will be asked to enter it every time you book.
+                            </p>
+                        </div>
+                        <input class="submit-input" type="submit" value="Sign Up">
+                    </div>
+                </div>        
+            </form>
+        </section>
+    </main>
+</body>
+</html>

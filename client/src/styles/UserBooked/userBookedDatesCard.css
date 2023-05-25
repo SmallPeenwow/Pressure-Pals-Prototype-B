@@ -1,0 +1,41 @@
+@import '../../constants/constants.css';
+
+.declined {
+	background-color: var(--user-bookings-declined-background-color);
+}
+
+.pending {
+	background-color: var(--user-bookings-pending-background-color);
+}
+
+.accepted {
+	background-color: var(--user-bookings-accepted-background-color);
+}
+
+#user-booking-dates {
+	width: 400px;
+	height: 125px;
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	color: var(--secondary-color);
+	font-size: 24px;
+	display: flex;
+	text-shadow: var(--default-text-shadow);
+}
+
+.date-container {
+	flex-basis: 60%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.user-status-container {
+	flex-basis: 40%;
+	display: flex;
+	padding: 10px 35px;
+	align-items: flex-end;
+	justify-content: flex-end;
+	text-transform: capitalize;
+}

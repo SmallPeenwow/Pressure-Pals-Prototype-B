@@ -1,0 +1,79 @@
+@import '../../constants/constants.css';
+
+.user-request-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background-color: var(--secondary-color);
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-5);
+	padding: 5px 10px;
+	width: 360px;
+	height: 320px;
+}
+
+.button-card-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 10px 15px;
+	width: 100%;
+	gap: 20px;
+}
+
+.button-card-container button {
+	width: 110px;
+	height: 40px;
+	font-size: 20px;
+	border: none;
+	border-radius: var(--border-radius-5);
+	box-shadow: var(--default-box-shadow);
+	cursor: pointer;
+}
+
+.default-container {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	font-size: 18px;
+}
+
+.date-card-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 25px 0px 0px;
+	font-size: 18px;
+}
+
+.date-service-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 15px;
+}
+
+.service-type-container {
+	display: flex;
+	gap: 10px;
+}
+
+.accept {
+	background-color: var(--booking-accept-button-color);
+}
+
+.decline {
+	background-color: var(--booking-decline-button-color);
+}
+
+.accept:hover {
+	background-color: var(--booking-accept-hover-button-color);
+	text-shadow: var(--default-text-shadow);
+	color: var(--secondary-color);
+}
+
+.decline:hover {
+	background-color: var(--booking-decline-hover-button-color);
+	text-shadow: var(--default-text-shadow);
+	color: var(--secondary-color);
+}

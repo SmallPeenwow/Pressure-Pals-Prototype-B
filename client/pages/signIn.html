@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/SignIn/signInStyle.css">
+    <link rel="stylesheet" href="../src/styles/snackbarStyle.css">
+    <script type="module" defer src="../src/components/SignInPage/signInCheck.js"></script>
+    <title>Pressure Pals</title>
+</head>
+<body>
+    <div id="snack-bar"></div>
+
+    <div class="circle-group-bottom-left">
+        <div class="circle-inner bottom-left"></div>
+        <div class="circle-middle bottom-left"></div>
+        <div class="circle-outer bottom-left"></div>
+    </div>
+
+    <div class="circle-group-top-right">
+        <div class="circle-inner top-right"></div>
+        <div class="circle-middle top-right"></div>
+        <div class="circle-outer top-right"></div>
+    </div>
+
+    <header>
+        <h1>Pressure Pals</h1>
+    </header>
+
+    <main>
+        <div>
+            <form id="signInForm" method="post" >
+                <div class="input-container">
+                    <label for="email">Enter Email:</label>
+                    <input type="text" id="email" placeholder="Example@gmail.com" autocomplete="off">
+                </div>
+                
+                <div class="input-container">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password">
+                </div>
+
+                <input class="submit-input" name="login" type="submit" value="Sign In">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import './src/constants/constants.css';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	font-family: 'Inter';
+	gap: 15px;
+	position: relative;
+	overflow: hidden;
+	background-image: linear-gradient(to right, white, #7500e2);
+}
+
+/* Left Side Of Screen */
+
+.left {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.left-container {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	padding: 5px;
+}
+
+.left-container-title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.left-container-title h1 {
+	font-size: 128px;
+	text-align: center;
+	color: var(--main-color);
+	text-shadow: var(--default-text-shadow);
+	cursor: default;
+}
+
+.left-container-buttons {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#sign-up,
+#sign-in {
+	background-color: var(--main-color);
+	box-shadow: var(--default-box-shadow);
+	border-radius: var(--border-radius-10);
+	border: none;
+	color: var(--secondary-color);
+	height: 80px;
+	width: 390px;
+	font-size: 36px;
+}
+
+#sign-up:hover,
+#sign-in:hover {
+	cursor: pointer;
+	background-color: var(--secondary-color);
+	color: var(--main-color);
+}
+
+/* Right Side Of Screen */
+
+.right {
+	flex: 1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.right-about-container,
+.right-offer-container {
+	height: 300px;
+	width: 500px;
+	border-radius: var(--border-radius-10);
+	box-shadow: var(--default-box-shadow);
+	background-color: var(--secondary-color);
+}
+
+.right-about-container h3,
+.right-offer-container h3 {
+	background-color: var(--main-color);
+	padding: 10px 0px 10px 15px;
+	border-radius: var(--border-radius-10) var(--border-radius-10) 0px 0px;
+	color: var(--secondary-color);
+	font-size: 30px;
+	cursor: default;
+}
+
+.right-about-container p,
+.right-offer-container p {
+	padding: 15px;
+	cursor: default;
+}
+
+.right-offer-container ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 30px;
+	padding-right: 10px;
+	gap: 10px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1200px) {
+	body {
+		flex-direction: column;
+		gap: 120px;
+		overflow-y: auto;
+		height: 100%;
+		background-image: linear-gradient(white, #7500e2);
+	}
+
+	.left-container {
+		gap: 60px;
+	}
+
+	.left-container-buttons {
+		gap: 50px;
+	}
+
+	.right {
+		gap: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.left-container-title h1 {
+		font-size: 60px;
+	}
+
+	#sign-in,
+	#sign-up {
+		width: 280px;
+		height: 50px;
+		font-size: 22px;
+	}
+
+	.right-about-container,
+	.right-offer-container {
+		width: 300px;
+	}
+}

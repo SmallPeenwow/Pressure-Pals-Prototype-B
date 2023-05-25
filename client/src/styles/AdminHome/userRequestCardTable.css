@@ -1,0 +1,16 @@
+@import '../../constants/constants.css';
+
+.inner-table-container-request-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 30px;
+	column-gap: 60px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.inner-table-container-request-cards {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 40px;
+		column-gap: 60px;
+	}
+}
