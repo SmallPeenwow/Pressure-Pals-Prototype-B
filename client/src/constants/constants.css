@@ -22,9 +22,9 @@
 	--booking-accept-hover-button-color: #44ff00;
 	--booking-decline-hover-button-color: #c40010;
 
-	--admin-booking-not-complete-background-color: #ffffff;
-	--admin-booking-in-progress-background-color: #f0da10;
-	--admin-booking-completed-background-color: #46da12;
+	--admin-booking-not-complete-background-color: #f7f7f7;
+	--admin-booking-in-progress-background-color: #f3de23;
+	--admin-booking-completed-background-color: #3ccf07;
 
 	--border-radius-15: 15px;
 	--border-radius-10: 10px;
