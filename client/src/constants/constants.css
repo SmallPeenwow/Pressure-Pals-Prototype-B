@@ -13,9 +13,9 @@
 	--table-slot-accepted-color: #3dd807;
 	/* TODO: END */
 
-	--user-bookings-declined-background-color: #ce2b2b;
-	--user-bookings-pending-background-color: #f0da10;
-	--user-bookings-accepted-background-color: #46da12;
+	--user-bookings-declined-background-color: #d32424;
+	--user-bookings-pending-background-color: #e6cf00;
+	--user-bookings-accepted-background-color: #3de600;
 
 	--booking-accept-button-color: #46da12;
 	--booking-decline-button-color: #e20a0a;

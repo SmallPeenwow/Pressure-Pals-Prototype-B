@@ -14,6 +14,7 @@
 	border-radius: var(--border-radius-5);
 	background-color: var(--secondary-color);
 	padding: 20px;
+	background-image: linear-gradient(to right bottom, white, #af7ddd);
 }
 
 @media only screen and (max-width: 1200px) {
