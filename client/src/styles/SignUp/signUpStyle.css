@@ -15,6 +15,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	overflow: hidden;
+	background-image: linear-gradient(to bottom right, white, #7500e2);
 }
 
 header {
@@ -126,8 +127,8 @@ input:focus {
 	background-color: var(--main-color);
 	box-shadow: var(--default-box-shadow);
 	border-radius: var(--border-radius-5);
-	height: 45px;
-	width: 250px;
+	height: 50px;
+	width: 300px;
 	font-size: 24px;
 	color: var(--secondary-color);
 	border: none;
@@ -166,120 +167,11 @@ label {
 	font-weight: 400;
 }
 
-/* circle background  */
-
-.circle-group-one-left,
-.circle-group-two-right,
-.circle-group-three-right {
-	position: absolute;
-	z-index: -1;
-}
-
-.circle-group-one-left {
-	bottom: 180px;
-	left: -235px;
-}
-
-.circle-group-one-left .circle-inner {
-	bottom: 20px;
-}
-
-.circle-group-one-left .circle-middle {
-	bottom: 15px;
-}
-
-.circle-group-one-left .circle-outer {
-	bottom: 0px;
-}
-
-.circle-group-two-right {
-	right: -130px;
-}
-
-.circle-group-two-right .circle-inner,
-.circle-group-two-right .circle-middle,
-.circle-group-two-right .circle-outer {
-	right: 0;
-}
-
-.circle-group-two-right .circle-inner {
-	height: 180px;
-	width: 180px;
-}
-
-.circle-group-two-right .circle-middle {
-	height: 230px;
-	width: 230px;
-}
-
-.circle-group-two-right .circle-outer {
-	height: 290px;
-	width: 290px;
-}
-
-.circle-group-three-right {
-	right: -100px;
-	bottom: -250px;
-}
-
-.circle-group-three-right .circle-inner {
-	height: 250px;
-	width: 250px;
-	bottom: 50px;
-	right: 60px;
-}
-
-.circle-group-three-right .circle-middle {
-	height: 325px;
-	width: 325px;
-	bottom: 30px;
-	right: 50px;
-}
-
-.circle-group-three-right .circle-outer {
-	height: 415px;
-	width: 415px;
-	right: 30px;
-	bottom: 0px;
-}
-
-.circle-inner {
-	background-color: var(--circle-inner-color);
-	height: 320px;
-	width: 320px;
-	border-radius: 50%;
-	position: absolute;
-}
-
-.circle-middle {
-	background-color: var(--circle-middle-color);
-	height: 420px;
-	width: 420px;
-	border-radius: 50%;
-	position: absolute;
-	z-index: -2;
-}
-
-.circle-outer {
-	background-color: var(--circle-outer-color);
-	height: 540px;
-	width: 540px;
-	border-radius: 50%;
-	position: absolute;
-	z-index: -3;
-}
-
 /* Media Query */
 
 @media only screen and (max-width: 1200px) {
 	body {
 		overflow: auto;
-	}
-
-	.circle-group-one-left,
-	.circle-group-two-right,
-	.circle-group-three-right {
-		display: none;
 	}
 }
 
