@@ -4,8 +4,8 @@
 	--third-color: #000000;
 	--hover-default-color-no-shadow: #ffffffd7;
 
-	--table-time-display-color: #51ade1;
-	--table-date-display-color: #009ff9;
+	--table-time-display-color: #ab61e7;
+	--table-date-display-color: #e400f9f5;
 	--table-slot-available-color: #ffffff;
 	--table-slot-closed-color: #d7d7d7;
 	/* TODO: Have not implemented too much and little time for it */
@@ -25,10 +25,6 @@
 	--admin-booking-not-complete-background-color: #ffffff;
 	--admin-booking-in-progress-background-color: #f0da10;
 	--admin-booking-completed-background-color: #46da12;
-
-	--circle-outer-color: #0085ff;
-	--circle-middle-color: #3e44e0;
-	--circle-inner-color: #131bde;
 
 	--border-radius-15: 15px;
 	--border-radius-10: 10px;
